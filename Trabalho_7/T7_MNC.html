@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de Métodos Numéricos Computacionais</title>
+    <link rel="stylesheet" href="T7_MNC.css">
+    <script src="T7_MNC.js"></script>
+</head>
+<body>
+    <div>
+        <h2>Configurações</h2>
+        <p>Número de equações <input type="number" id="numfun"></p>
+        <p>Erro máximo tolerado <input type="number" id="maxerr"></p>
+        <p>Número de iterações toleradas <input type="number" id="maxite"></p>
+        <button onclick="Redimensionar()">Redimensionar sistema</button>
+        <button onclick="Calcular()">Calcular</button>
+    </div>
+    <div>
+        <h2>Estimativa inicial</h2>
+        <p id="aux1">Redimensione primeiro</p>
+        <table id="estimate"></table>
+    </div>
+    <div>
+        <h2>Sistema não linear</h2>
+        <table id="system"></table>
+    </div>
+    <div>
+        <h2>Resultado</h2>
+        <p id="solution">Calcule primeiro</p>
+    </div>
+</body>

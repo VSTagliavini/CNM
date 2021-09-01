@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de Métodos Numéricos Computacionais</title>
+    <link rel="stylesheet" href="T4_MNC.css">
+    <script src="T4_MNC.js"></script>
+</head>
+<body>
+    <br>
+    <br>
+    <div>
+        <h2>Métodos disponíveis</h2>
+        <p>
+            <input type="radio" name="Opcoes" id="MSisLin" checked>
+            <label for="MSisLin">Sistema Linear</label>
+            <input type="radio" name="Opcoes" id="MNew">
+            <label for="MNew">Newton</label>
+            <input type="radio" name="Opcoes" id="MNewGre">
+            <label for="MNewGre">Newton-Gregory</label>
+        </p>
+        <h2>Configurações da intepolação</h2>
+        <p>
+            <label for="NumPontos">Número n de pontos (com 0 &lt; n)</label>
+            <input id="NumPontos" size="10">
+            &emsp;
+            <button onclick="Redimensionar()">Redimensionar</button>
+            &emsp;
+            <button onclick="Calcular()">Calcular</button>
+        </p>
+        <p>
+            <label for="GrauPoli">Grau k do polinômio (tal que 0 &lt; k &leq; n)</label>
+            <input id="GrauPoli" size="10">
+            &emsp;
+            <label for="PontoRef">Ponto de referência z (se k &lt; n)</label>
+            <input id="PontoRef" size="10">
+        </p>
+        <table id="Pontos"></table>
+    </div>
+    <br>
+    <br>
+    <div id="dRes">
+        <h2>Resultado</h2>
+        <p id="pRes">Calcule primeiro</p>
+    </div>
+</body>

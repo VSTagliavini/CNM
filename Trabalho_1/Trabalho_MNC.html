@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de Métodos Numéricos Computacionais</title>
+    <link rel="stylesheet" href="Trabalho_MNC.css">
+</head>
+<body>
+    <div>
+        <p>O argumento de toda função deve ser delimitado por parênteses. Por exemplo, sin x não será aceito mas sin(x) será.</p>
+        <p>As funções trigonométricas assumirão que os argumentos passados estão em radianos.</p>
+        <p>Para funções de n variáveis, a i-nésima variável deve ser representada como x[i].</p>
+        <p>Funções "incompletas" não serão aceitas. Por exemplo, sin(x)+ não será aceita.</p>
+        <p>Os operadores ^ e ** representam potenciação. Por exemplo, a^b = a**b</p>
+        <p>Para representar &pi;, escreva pi</p>
+    </div>
+    <p></p>
+    <div>
+        <h3>Função f: R -> R</h3>
+        <p>f(x) = <textarea id="fx" rows="1"></textarea>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x = <textarea id="x" rows="1" cols="10"></textarea>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&epsiv; = <textarea id="epi1" rows="1" cols="10"></textarea></p>
+        <p><button id="Calculafx" onclick="CalcularFx()">Calcular</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f¹(x) = <textarea id="d1fx" rows="1"></textarea>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f²(x) = <textarea id="d2fx" rows="1"></textarea></p>
+    </div>
+    <p></p>
+    <div>
+        <h3>Função f: Rn -> R</h3>
+        <p>n = <textarea id="n" rows="1" cols="5"></textarea>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f(x[]) = <textarea id="fxn" rows="1"></textarea>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&epsiv; = <textarea id="epin" rows="1"></textarea></p>
+        <p><button id="Calculafxn" onclick="Resizen()">Redimensionar</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="Calculafxn" onclick="Calcularfxn()">Calcular</button></p>
+        <div id="xn">
+            <p id="vetorx">X[]</p>
+        </div>
+        <div>
+            <p id="Grad">G[]</p>
+        </div>
+        <div id="Hess">
+            <p>H[][]</p>
+        </div>
+    </div>
+    
+    
+    
+
+    <script src="Trabalho_MNC.js"></script>
+</body>
+</html>

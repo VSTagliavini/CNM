@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de Métodos Numéricos Computacionais</title>
+    <link rel="stylesheet" href="T3_MNC.css">
+    <script src="T3_MNC.js"></script>
+</head>
+<body>
+    <div>
+        <!-- Colocar instruções aqui senão o velho não vai entender -->
+        <!-- Apagar o comentário acima antes de mandar para o Sacoman-->
+        <p>Este programa aceita sistemas lineares de até 25 variáveis.</p>
+        <p>Caso um valor real seja inserido como número de variáveis, o programa usará o maior inteiro menor que o valor inserido.</p>
+    </div>
+    <br>
+    <br>
+    <div>
+        <!-- Aba de seleção. Colocar aqui coisas como o método desejado, número de variáveis e o botão click-clickante -->
+        <p>
+            <label for="n">Número de variáveis:&ensp;&nbsp;</label>
+            <input type="number" id="n" min="0" max="25">
+            &emsp;&nbsp;
+            <button id="RedSis" onclick="Redimensionar()">Redimensionar</button>
+            &emsp;&emsp;&ensp;
+            <button id="Calcular" onclick="Calcular()">Calcular</button>
+        </p>
+        <div id="MetodosIterativos"></div>
+        <p>Método escolhido:</p>
+        <p>
+            <input type="radio" name="Opcoes" id="MGauss" onclick="MetodosDiretos()" checked><label for="MGauss">Gauss</label>
+            <input type="radio" name="Opcoes" id="MGaussCom" onclick="MetodosDiretos()"><label for="MGaussCom">Gass compacto</label>
+            <input type="radio" name="Opcoes" id="MGaussPivPar" onclick="MetodosDiretos()"><label for="MGaussPivPar">Gauss com pivotamento parcial</label>
+            <input type="radio" name="Opcoes" id="MGaussPivTot" onclick="MetodosDiretos()"><label for="MGaussPivTot">Gauss com pivotamento total</label>
+            <input type="radio" name="Opcoes" id="MDecomposicaoLU" onclick="MetodosDiretos()"><label for="MDecomposicaoLU">Decomposição L. U.</label>
+            <input type="radio" name="Opcoes" id="MCholesky" onclick="MetodosDiretos()"><label for="MCholesky">Cholesky</label>
+            <input type="radio" name="Opcoes" id="MJacobi" onclick="MetodosIterativos()"><label for="MJacobi">Jabobi</label>
+            <input type="radio" name="Opcoes" id="MGauss-Seidel" onclick="MetodosIterativos()"><label for="MGauss-Seidel">Gauss-Seidel</label>
+        <p>
+    </div>
+    <br>
+    <br>
+    <div>
+        <p>Sistema linear</p>
+        <table id="SistemaEquacoes"></table>
+        <table id="x"></table>
+    </div>
+
+</body>

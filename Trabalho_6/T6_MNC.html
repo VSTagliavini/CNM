@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de Métodos Numéricos Computacionais</title>
+    <link rel="stylesheet" href="T6_MNC.css">
+    <script src="T6_MNC.js"></script>
+</head>
+<body>
+    <div>
+        <h2>Escolha o método que será utilizado</h2>
+        <p>
+            <input type="radio" name="Opcoes" id="MRetEsq" checked>
+            <label for="MRetEsq">Retângulos à esquerda</label>
+            <input type="radio" name="Opcoes" id="MRetDir">
+            <label for="MRetDir">Retângulos à direita</label>
+            <input type="radio" name="Opcoes" id="MTra">
+            <label for="MTra">Trapézios</label>
+            <input type="radio" name="Opcoes" id="M13Simp">
+            <label for="M13Simp">1/3 de Simpson</label>
+            <input type="radio" name="Opcoes" id="M38Simp">
+            <label for="M38Simp">3/8 de Simpson</label>
+            <input type="radio" name="Opcoes" id="MQuaGau">
+            <label for="MQuaGau">Quadratura de Gauss</label>
+        </p>
+    </div>
+    <br>
+    <br>
+    <div>
+        <h2>Função, intervalos e erro máximo</h2>
+        <p>
+            <label for="Funcao">Função: </label>
+            <input id="Funcao">
+            &ensp;&nbsp;
+            <label for="a">a</label>
+            <input type="number" id="a">
+            &ensp;&nbsp;
+            <label for="b">b</label>
+            <input type="number" id="b">
+            &ensp;&nbsp;
+            <label for="ErrMax">Erro máximo</label>
+            <input type="number" id="ErrMax">
+        </p>
+        <p><button onclick="Calcular()">Calcular</button></p>
+    </div>
+    <br>
+    <br>
+    <div>
+        <h2>Integral calculada</h2>
+        <p id="Resultado">Calcule primeiro</p>
+    </div>
+</body>

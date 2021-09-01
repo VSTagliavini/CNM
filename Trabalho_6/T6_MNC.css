@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(17, 16, 16);
+    font: normal 10pt Arial;
+    align-items: center;
+}
+div {
+    background-color: rgb(240, 197, 142);
+    align-items: center;
+    padding: 8px;
+    border-radius: 30px;
+}
+p {
+    text-align: left;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de Métodos Numéricos Computacionais</title>
+    <link rel="stylesheet" href="T2_MNC.css">
+    <script src="T2_MNC.js"></script>
+</head>
+<body>
+    <div>
+        <p>Com exceção do método de busca uniforme, todos os métodos implementados assumem que há uma e apenas uma raiz no intervalo passado.</p>
+        <p>O argumento de toda função deve ser delimitado por parênteses. Por exemplo, sin x não será aceito mas sin(x) será.</p>
+        <p>As funções trigonométricas assumirão que os argumentos passados estão em radianos.</p>
+        <p>Para funções de n variáveis, a i-nésima variável deve ser representada como x[i].</p>
+        <p>Funções "incompletas" não serão aceitas. Por exemplo, sin(x)+ não será aceita.</p>
+        <p>Os operadores ^ e ** representam potenciação. Por exemplo, a^b = a**b.</p>
+        <p>Para representar &pi;, escreva 'pi' sem aspas.</p>
+    </div>
+    <br>
+    <br>
+    <div>
+        <p>Busca de intervalos com indícios de conter raízes</p>
+        <p><label for="f(x)Intervalos">f(x) = </label><input id="f(x)Intervalos">
+        &ensp;&nbsp;
+        <label for="aIntervalos">a = </label><input type="number" id="aIntervalos">
+        &ensp;&nbsp;
+        <label for="bIntervalos">b = </label><input type="number" id="bIntervalos">
+        &ensp;&nbsp;
+        <label for="deltaIntervalos">&Delta; = </label><input type="number" id="deltaIntervalos">
+        &ensp;&nbsp;
+        <button onclick="CalcularIntervalos()">Calcular</button>
+        </p>
+        <table id="Intervalos"></table>
+    </div>
+    <br>
+    <br>
+    <div>
+        <p>Busca de raízes no intervalo</p>
+        <p>
+            <label for="fxRaizes">f(x) = </label><input id="fxRaizes">
+            &ensp;&nbsp;
+            <label for="aRaizes">a = <label><input id="aRaizes">
+            &ensp;&nbsp;
+            <label for="bRaizes">b = </label><input id="bRaizes">
+            &ensp;&nbsp;
+            <label for="erroRaizes">&epsilon; = </label><input id="erroRaizes">
+            &ensp;&nbsp;
+            <button onclick="CalcularRaizes()">Calcular</button>
+        </p>
+        <p>Métodos disponíveis</p>
+        <p>
+            <input type="radio" name="Opcoes" id="MBuscaUniforme" checked><label for="MBuscaUniforme">Busca Uniforme</label>
+            <input type="radio" name="Opcoes" id="MBisseccao"><label for="MBisseccao">Bissecção</label>
+            <input type="radio" name="Opcoes" id="MCordas"><label for="MCordas">Cordas</label>
+            <input type="radio" name="Opcoes" id="MCordasMod"><label for="MCordasMod">Cordas modificados</label>
+            <input type="radio" name="Opcoes" id="MNewton"><label for="MNewton">Newton</label>
+            <input type="radio" name="Opcoes" id="MNewtonMod"><label for="MNewtonMod">Newton modificado</label>
+        </p>
+        <p>Soluções encontradas</p>
+        <p>
+            <table id="Raizes"></table>
+        </p>
+    </div>
+</body>

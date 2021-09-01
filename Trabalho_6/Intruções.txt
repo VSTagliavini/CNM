@@ -1,0 +1,5 @@
+Para executar o programa, simplesmente abra o arquivo Trabalho_MNC.html
+enquanto os arquivos Trabalho_MNC.css e Trabalho_MNC.js estiverem
+na mesma pasta. Contudo, o arquivo Trabalho_MNC.css não é necessário
+para o funcionamento do programa, servindo apenas para realizar mudan-
+ças visuais.

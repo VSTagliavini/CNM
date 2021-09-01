@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(17, 16, 16);
+    font: normal 10pt Arial;
+    align-items: center;
+}
+div {
+    background-color: rgb(222, 184, 135);
+    align-items: center;
+    padding: 8px;
+    border-radius: 30px;
+}
+th {
+    background-color: blueviolet;
+}
+td {
+    background-color: white;
+}
+p {
+    text-align: left;
+}
+div#dRes {
+    background-color: rgb(167, 190, 101);
+    align-items: center;
+    padding: 8px;
+    border-radius: 30px;
+}
+p#pRes {
+    background-color: white;
+    text-align: center;
+    border-color: black;
+}

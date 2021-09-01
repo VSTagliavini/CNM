@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(17, 16, 16);
+    font: normal 10pt Arial;
+    align-items: center;
+}
+div {
+    background-color: aquamarine;
+    align-items: center;
+    padding: 8px;
+    border-radius: 30px;
+}
+th {
+    background-color: blueviolet;
+}
+td {
+    background-color: white;
+}
+p {
+    text-align: center;
+}

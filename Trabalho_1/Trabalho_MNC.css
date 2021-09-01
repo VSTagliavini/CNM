@@ -1,0 +1,17 @@
+body {
+    background-color: aquamarine;
+    font: normal 10pt Arial;
+    align-items: center;
+}
+div {
+    align-self: center;
+    background-color: rgb(90, 143, 189);
+    text-align: center;
+    padding: 8px;
+    border-radius: 10px;
+}
+textarea {
+    grid-row: auto;
+    height: 10px;
+    text-align: left;
+}
